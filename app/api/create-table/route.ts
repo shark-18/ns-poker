@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 import { deployContract } from 'viem/contract';
 import { privateKeyToAccount } from 'viem/accounts';
 import { sepolia } from 'viem/chains';
-import { createPublicClient, http } from 'viem';
+import { getContract, createPublicClient, http } from 'viem';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
